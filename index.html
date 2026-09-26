@@ -83,6 +83,9 @@
   .gift-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .gift-icon.book { width: 44px; height: 64px; border-radius: 6px; background: none; box-shadow: 0 6px 14px -4px rgba(0,0,0,0.6); }
   .gift-icon .mono { font-family: var(--text); font-weight: 800; font-size: 19px; letter-spacing: 0.02em; }
+  .gift-link { transition: background .15s ease, transform .15s ease; }
+  .gift-link:hover { background: #283149; transform: translateY(-1px); }
+  .gift-link span { color: #E2C46E; }
   .gift strong { display: block; font-size: 18px; font-weight: 800; color: var(--white); }
   .gift span { font-size: 15px; color: var(--soft); }
   .cash-label { font-size: 13px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
@@ -146,6 +149,8 @@
   .tier-list li.on { color: #F3F4F6; font-weight: 600; }
   .tier-list li.on .ic { color: #E2B85C; }
   .tier-list li.off { color: #5B6475; }
+  .tier-link { text-decoration: underline; text-decoration-color: rgba(226,184,92,0.5); text-underline-offset: 3px; }
+  .tier-link:hover { color: #E2B85C; }
   .tier-list em { font-style: normal; color: var(--muted); font-weight: 500; }
 
   /* Eligibility */
@@ -230,10 +235,10 @@
           <div class="gift-icon" style="background:#3A7D5C;"><span class="mono" style="color:#FFFFFF;font-size:17px;">10X</span></div>
           <div><strong>3 months of mentorship</strong><span>On the 10X Capital platform</span></div>
         </div>
-        <div class="gift">
+        <a class="gift gift-link" href="https://wamenta.com/pricing" target="_blank" rel="noopener">
           <div class="gift-icon" style="background:#C9A94E;"><span class="mono" style="color:#0B0B0B;font-family:Georgia,'Times New Roman',serif;font-size:24px;">W</span></div>
-          <div><strong>3 months of Wamenta</strong><span>Legacy tier subscription</span></div>
-        </div>
+          <div><strong>3 months of Wamenta</strong><span>The World's Knowledge Factory &#8599;</span></div>
+        </a>
       </div>
       <div class="cash">
         <div class="cash-label">Plus a cash prize for each winner</div>
@@ -327,21 +332,21 @@
         <div class="tier-name">Third Place</div>
         <div class="tier-big">25,000<small> RWF</small></div>
         <div class="tier-sub">Plus everything below</div>
-        <ul class="tier-list"><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Enough for Success book</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 months of mentorship on 10X Capital</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 months of Wamenta Legacy tier <em>($119/month value)</em></span></li></ul>
+        <ul class="tier-list"><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Enough for Success book</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 months of mentorship on 10X Capital</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><a href="https://wamenta.com/pricing" target="_blank" rel="noopener" class="tier-link">3 months of Wamenta Legacy tier &#8599;</a> <em>($119/month value)</em></span></li></ul>
       </div>
       <div class="tier ">
         <span class="badge b-orange">Winner</span>
         <div class="tier-name">Second Place</div>
         <div class="tier-big">50,000<small> RWF</small></div>
         <div class="tier-sub">Plus everything below</div>
-        <ul class="tier-list"><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Enough for Success book</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 months of mentorship on 10X Capital</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 months of Wamenta Legacy tier <em>($119/month value)</em></span></li></ul>
+        <ul class="tier-list"><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Enough for Success book</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 months of mentorship on 10X Capital</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><a href="https://wamenta.com/pricing" target="_blank" rel="noopener" class="tier-link">3 months of Wamenta Legacy tier &#8599;</a> <em>($119/month value)</em></span></li></ul>
       </div>
       <div class="tier top">
         <span class="badge b-green">Top Prize</span>
         <div class="tier-name">First Place</div>
         <div class="tier-big">100,000<small> RWF</small></div>
         <div class="tier-sub">Plus everything below</div>
-        <ul class="tier-list"><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Enough for Success book</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 months of mentorship on 10X Capital</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 months of Wamenta Legacy tier <em>($119/month value)</em></span></li></ul>
+        <ul class="tier-list"><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Enough for Success book</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 months of mentorship on 10X Capital</span></li><li class="on"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5L10 17L19 7" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><a href="https://wamenta.com/pricing" target="_blank" rel="noopener" class="tier-link">3 months of Wamenta Legacy tier &#8599;</a> <em>($119/month value)</em></span></li></ul>
       </div>
     </div>
   </div>
